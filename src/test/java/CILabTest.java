@@ -18,7 +18,7 @@ public class CILabTest {
         myString = null;
     }
 
-    // test if we detect capital usage
+    // test if we detect capital usage and is the first test
     @Test
     public void detectCapitalUseTest1()
     {

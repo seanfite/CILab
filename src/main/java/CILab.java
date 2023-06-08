@@ -11,6 +11,7 @@ public class CILab implements CILabInterface {
         myString = string;
     }
 
+    // this is the main implementation method
     @Override
     public boolean detectCapitalUse()
     {

@@ -8,7 +8,7 @@ language: java
 # A list of available JDKs in Trusty can be seed in:
 # https://docs.travis-ci.com/user/reference/xenial/#jvm-clojure-groovy-java-scala-support
 jdk: openjdk15
-
+#
 # Each job in Travis CI has several steps:
 # https://docs.travis-ci.com/user/job-lifecycle/
 # The 'language: java' directive sets up sane defaults to test common java applications
@@ -27,3 +27,7 @@ jobs:
 # which will somehow update the code coverage value based on the JaCoCo report generated during the previous build command.
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+branches:
+  only:
+    - master
